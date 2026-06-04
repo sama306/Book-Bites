@@ -3,9 +3,66 @@ import BaseLayouts from "../layouts/baseLayouts.astro"
 ---
 
 <BaseLayouts>
-	<div class="content">
-		<h2>About</h2>
-		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel minus fuga quidem. Dolore quisquam explicabo cupiditate, consequatur a, totam, nostrum recusandae porro aliquam exercitationem minima libero quae eaque quas aliquid.</p>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum reprehenderit beatae, nam placeat blanditiis eaque voluptatum sunt minus laborum soluta consectetur explicabo porro exercitationem, ad sapiente aliquam! Odit, tenetur quos!</p>
-	</div>
+	<section class="hero">
+		<div class="content">
+			<h2>About Book Bites</h2>
+			<p>Welcome to my personal corner of the internet. I created <strong>Book Bites</strong> because I believe every book leaves a unique flavor in our minds, and some are just too good not to share.</p>
+            <p>I focus on honest, slightly whimsical reviews that get to the heart of how a book feels, rather than just what happens in it.</p>
+            
+            <div class="about-stats">
+                <div class="stat">
+                    <span>📚</span>
+                    <p>Avid Reader</p>
+                </div>
+                <div class="stat">
+                    <span>✍️</span>
+                    <p>Honest Reviews</p>
+                </div>
+            </div>
+
+			<a href="/" class="back-home">Back to Home</a>
+		</div>
+	</section>
 </BaseLayouts>
+
+<style>
+	.hero {
+		background-image: url('/wallpaper1.webp');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 40px 20px;
+		box-sizing: border-box;
+	}
+	.content {
+		text-align: center;
+		margin: 0 auto !important;
+		background-color: rgba(255, 255, 255, 0.7);
+		backdrop-filter: blur(10px);
+		padding: 50px;
+		border-radius: 20px;
+		max-width: 800px;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	}
+    .about-stats {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin: 30px 0;
+    }
+    .stat span {
+        font-size: 3rem;
+    }
+	a {
+		display: inline-block;
+		background-color: #7a49c5;
+		color: #fff;
+		padding: 10px 20px;
+		border-radius: 4px;
+		text-decoration: none;
+	}
+</style>

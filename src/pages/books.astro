@@ -2,19 +2,17 @@
 import { getCollection } from "astro:content";
 import BaseLayouts from "../layouts/baseLayouts.astro"
 
-// Obtenemos los libros y seleccionamos los últimos 2
 const allBooks = await getCollection('books');
-const latestBooks = allBooks.slice(-2).reverse();
 ---
 
 <BaseLayouts>
 	<section class="hero">
 		<div class="content">
-			<h2>Welcome</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At temporibus consequuntur numquam? Illum fugit consectetur dolor dolore dicta? Optio iure placeat odio reprehenderit, delectus labore iusto molestias consequuntur voluptatem dolore.</p>
+			<h2>All My Reviews</h2>
+			<p>Explore the full collection of books I've dived into. From fantasy to science fiction, here is my honest take on every journey.</p>
 
-			<div class="latest-reviews">
-				{latestBooks.map(book => (
+			<div class="reviews-grid">
+				{allBooks.map(book => (
 					<article class="review-card">
 						<div class="book-icon">📖</div>
 						<h3>{book.data.title}</h3>
@@ -25,11 +23,10 @@ const latestBooks = allBooks.slice(-2).reverse();
 				))}
 			</div>
 
-			<a href="/books">Take a look at my reviews</a>
+			<a href="/" class="back-home">Back to Home</a>
 		</div>
 	</section>
 </BaseLayouts>
-
 
 <style>
 	.hero {
@@ -54,7 +51,7 @@ const latestBooks = allBooks.slice(-2).reverse();
 		max-width: 1000px;
 		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 	}
-	.latest-reviews {
+	.reviews-grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 		gap: 20px;
@@ -73,9 +70,6 @@ const latestBooks = allBooks.slice(-2).reverse();
 		font-size: 2.5rem;
 		margin-bottom: 10px;
 	}
-	.review-card h3 {
-		margin: 0 0 5px 0;
-	}
 	.rating {
 		font-weight: 500;
 		color: #7a49c5;
@@ -89,21 +83,21 @@ const latestBooks = allBooks.slice(-2).reverse();
 		display: inline-block;
 		background-color: #7a49c5;
 		color: #fff;
-		padding: 6px 10px;
-		border-radius: 2px;
+		padding: 8px 16px;
+		border-radius: 4px;
 		text-decoration: none;
-		margin-top: 20px;
-	}
-	a:hover {
-		background-color: #965ee9;
 	}
 	.full-review {
 		background-color: transparent;
 		color: #7a49c5;
 		border: 1px solid #7a49c5;
+		margin-top: 20px;
 	}
 	.full-review:hover {
 		background-color: #7a49c5;
 		color: #fff;
 	}
+    .back-home {
+        margin-top: 20px;
+    }
 </style>
