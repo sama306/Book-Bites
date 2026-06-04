@@ -1,17 +1,43 @@
 ---
+import { email } from "astro:schema"
+import BaseLayouts from "../layouts/baseLayouts.astro"
 
+const getUser = () => {
+	return Math.random() < 0.5 ? null : {
+		name: 'Valentin',
+		email: 'valen@bookbites.com'
+	}
+}
+
+const user = getUser()
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayouts>
+	<div class="content">
+		{user && (
+			<h2>Welcome, {user?.name}</h2>
+			<p>Logged is as: {user?.email}</p>
+		)}
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At temporibus consequuntur numquam? Illum fugit consectetur dolor dolore dicta? Optio iure placeat odio reprehenderit, delectus labore iusto molestias consequuntur voluptatem dolore.</p>
+		<a href="/books">Take a look at my reviews</a>
+	</div>
+</BaseLayouts>
+
+
+<style>
+	.content{
+		text-align: center;
+	}
+	a {
+		display: inline-block;
+		background-color: #7a49c5;
+		color: #fff;
+		padding: 6px 10px;
+		border-radius: 2px;
+		text-decoration: none;
+		margin-top: 20px;
+	}
+	a:hover {
+		background-color: #965ee9;
+	}
+</style>
