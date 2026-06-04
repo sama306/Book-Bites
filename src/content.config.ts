@@ -8,7 +8,8 @@ const books = defineCollection({
         title: z.string(),
         author: z.string(),
         rating: z.number(),
-        summary: z.string()
+        summary: z.string(),
+        genres: z.string().array()
     })
 })
 

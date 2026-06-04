@@ -5,6 +5,14 @@ import BaseLayouts from "../layouts/baseLayouts.astro"
 // Obtenemos los libros y seleccionamos los últimos 2
 const allBooks = await getCollection('books');
 const latestBooks = allBooks.slice(-2).reverse();
+
+// Géneros disponibles
+const genres = ["Dark Fantasy", "Epic Fantasy"];
+
+// Calculamos las estadísticas
+const totalBooks = allBooks.length;
+const totalAuthors = new Set(allBooks.map(book => book.data.author)).size;
+const totalGenres = new Set(allBooks.map(book => book.data.genres).filter(Boolean).flat()).size;
 ---
 
 <BaseLayouts>
@@ -23,6 +31,21 @@ const latestBooks = allBooks.slice(-2).reverse();
 						<a href={`/books/${book.id}`} class="full-review">Full review</a>
 					</article>
 				))}
+			</div>
+
+			<div class="stats-container">
+				<div class="stat-item">
+					<span class="stat-value">{totalBooks}</span>
+					<span class="stat-label">Books</span>
+				</div>
+				<div class="stat-item">
+					<span class="stat-value">{totalAuthors}</span>
+					<span class="stat-label">Authors</span>
+				</div>
+				<div class="stat-item">
+					<span class="stat-value">{totalGenres}</span>
+					<span class="stat-label">Genres</span>
+				</div>
 			</div>
 
 			<a href="/books">Take a look at my reviews</a>
@@ -105,5 +128,26 @@ const latestBooks = allBooks.slice(-2).reverse();
 	.full-review:hover {
 		background-color: #7a49c5;
 		color: #fff;
+	}
+	.stats-container {
+		display: flex;
+		justify-content: center;
+		gap: 50px;
+		margin: 30px 0;
+		padding: 20px;
+		border-top: 1px solid rgba(122, 73, 197, 0.2);
+	}
+	.stat-item {
+		display: flex;
+		flex-direction: column;
+	}
+	.stat-value {
+		font-size: 2rem;
+		font-weight: bold;
+		color: #7a49c5;
+	}
+	.stat-label {
+		font-size: 0.9rem;
+		color: #666;
 	}
 </style>

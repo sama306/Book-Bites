@@ -3,6 +3,7 @@ title: "The Name of The Wind"
 author: "Patrick Rothfuss"
 summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, reprehenderit."
 rating: 9
+genres: ["Epic Fantasy"]
 ---
 
 ## The Name of the Wind Review

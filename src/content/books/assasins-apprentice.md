@@ -3,6 +3,7 @@ title: "Assassin's Apprentice"
 author: "Robin Hobb"
 summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, reprehenderit."
 rating: 8
+genres: ["Epic Fantasy"]
 ---
 
 ### A Book That May Have Escaped From Another Book

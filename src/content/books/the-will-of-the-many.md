@@ -3,6 +3,7 @@ title: "The Will of the Many"
 author: "James Islington"
 summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, reprehenderit."
 rating: 7
+genres: ["Epic Fantasy"]
 ---
 
 ### A Novel That May Contain Weather
