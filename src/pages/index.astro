@@ -2,22 +2,19 @@
 import { email } from "astro:schema"
 import BaseLayouts from "../layouts/baseLayouts.astro"
 
-const getUser = () => {
-	return Math.random() < 0.5 ? null : {
-		name: 'Valentin',
-		email: 'valen@bookbites.com'
-	}
-}
+// const getUser = () => {
+//	return Math.random() < 0.5 ? null : {
+//		name: 'Valentin',
+//		email: 'valen@bookbites.com'
+//	}
+//}
 
-const user = getUser()
+// const user = getUser()
 ---
 
 <BaseLayouts>
 	<div class="content">
-		{user && (
-			<h2>Welcome, {user?.name}</h2>
-			<p>Logged is as: {user?.email}</p>
-		)}
+		<h2>Welcome</h2>
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At temporibus consequuntur numquam? Illum fugit consectetur dolor dolore dicta? Optio iure placeat odio reprehenderit, delectus labore iusto molestias consequuntur voluptatem dolore.</p>
 		<a href="/books">Take a look at my reviews</a>
 	</div>
