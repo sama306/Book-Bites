@@ -59,6 +59,7 @@ const totalGenres = new Set(allBooks.map(book => book.data.genres).filter(Boolea
 					<p><strong>Tel:</strong> +54 11 1234-5678</p>
 					<p><strong>Email:</strong> valensamacoits1@gmail.com</p>
 				</div>
+				<img src="/lucrative.webp" alt="Lucrative Proposal" class="contact-image" />
 			</div>
 
 			<form class="contact-form">
@@ -209,6 +210,13 @@ const totalGenres = new Set(allBooks.map(book => book.data.genres).filter(Boolea
 		font-size: 1.2rem;
 		margin: 10px 0;
 		color: #333;
+	}
+	.contact-image {
+		margin-top: 30px;
+		max-width: 100%;
+		height: auto;
+		border-radius: 12px;
+		box-shadow: 0 8px 20px rgba(122, 73, 197, 0.15);
 	}
 	.contact-form {
 		flex: 1;
