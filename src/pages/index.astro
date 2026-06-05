@@ -2,14 +2,13 @@
 import { getCollection } from "astro:content";
 import BaseLayouts from "../layouts/baseLayouts.astro"
 
-// Obtenemos los libros y seleccionamos los últimos 2
 const allBooks = await getCollection('books');
 const latestBooks = allBooks.slice(-2).reverse();
 
-// Géneros disponibles
+
 const genres = ["Dark Fantasy", "Epic Fantasy"];
 
-// Calculamos las estadísticas
+
 const totalBooks = allBooks.length;
 const totalAuthors = new Set(allBooks.map(book => book.data.author)).size;
 const totalGenres = new Set(allBooks.map(book => book.data.genres).filter(Boolean).flat()).size;
@@ -51,6 +50,38 @@ const totalGenres = new Set(allBooks.map(book => book.data.genres).filter(Boolea
 			<a href="/books">Take a look at my reviews</a>
 		</div>
 	</section>
+
+	<section class="contact-section">
+		<div class="contact-container">
+			<div class="contact-text">
+				<h3>Solicite una propuesta</h3>
+				<div class="contact-info">
+					<p><strong>Tel:</strong> +54 11 1234-5678</p>
+					<p><strong>Email:</strong> valensamacoits1@gmail.com</p>
+				</div>
+			</div>
+
+			<form class="contact-form">
+				<div class="form-group">
+					<label for="name">Nombre</label>
+					<input type="text" id="name" name="name" placeholder="Ej: Juan Pérez" required />
+				</div>
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" placeholder="Ej: juan@ejemplo.com" required />
+				</div>
+				<div class="form-group">
+					<label for="phone">Telefono</label>
+					<input type="tel" id="phone" name="phone" placeholder="Ej: +54 11 1234 5678" />
+				</div>
+				<div class="form-group">
+					<label for="message">Mensaje</label>
+					<textarea id="message" name="message" rows="4" placeholder="Describenos tu libro a reseñar..."></textarea>
+				</div>
+				<button type="submit">Enviar</button>
+			</form>
+		</div>
+	</section>
 </BaseLayouts>
 
 
@@ -64,6 +95,7 @@ const totalGenres = new Set(allBooks.map(book => book.data.genres).filter(Boolea
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		position: relative;
 		padding: 40px 20px;
 		box-sizing: border-box;
 	}
@@ -149,5 +181,81 @@ const totalGenres = new Set(allBooks.map(book => book.data.genres).filter(Boolea
 	.stat-label {
 		font-size: 0.9rem;
 		color: #666;
+	}
+	.contact-section {
+		background-color: #f9f6fc;
+		padding: 80px 20px;
+		text-align: center;
+		border-top: 1px solid #e0d5f0;
+	}
+	.contact-container {
+		max-width: 1000px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 50px;
+		text-align: left;
+	}
+	.contact-text {
+		flex: 1;
+	}
+	.contact-section h3 {
+		font-size: 2rem;
+		color: #7a49c5;
+		margin-bottom: 20px;
+	}
+	.contact-info p {
+		font-size: 1.2rem;
+		margin: 10px 0;
+		color: #333;
+	}
+	.contact-form {
+		flex: 1;
+		background: white;
+		padding: 30px;
+		border-radius: 12px;
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
+	.form-group {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+	}
+	.form-group label {
+		font-weight: 500;
+		color: #333;
+	}
+	.form-group input, .form-group textarea {
+		padding: 10px;
+		border: 1px solid #e0d5f0;
+		border-radius: 4px;
+		font-family: inherit;
+	}
+	.form-group input::placeholder, 
+	.form-group textarea::placeholder {
+		color: #aaa;
+	}
+	.contact-form button {
+		background-color: #7a49c5;
+		color: #fff;
+		padding: 12px;
+		border-radius: 4px;
+		border: none;
+		cursor: pointer;
+		font-weight: bold;
+		transition: background-color 0.2s;
+	}
+	.contact-form button:hover {
+		background-color: #965ee9;
+	}
+	@media (max-width: 768px) {
+		.contact-container {
+			flex-direction: column;
+			text-align: center;
+		}
 	}
 </style>
