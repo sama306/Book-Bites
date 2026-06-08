@@ -243,3 +243,26 @@ const totalGenres = new Set(allBooks.map(book => book.data.genres).filter(Boolea
 		}
 	}
 </style>
+
+<script>
+	const form = document.querySelector('form[name="contacto"]') as HTMLFormElement;
+
+	if (form) {
+		form.addEventListener('submit', (e) => {
+			e.preventDefault();
+			
+			const formData = new FormData(form);
+			
+			fetch("/", {
+				method: "POST",
+				headers: { "Content-Type": "application/x-www-form-urlencoded" },
+				body: new URLSearchParams(formData as any).toString(),
+			})
+			.then(() => {
+				alert("¡Propuesta enviada con éxito! Nos pondremos en contacto pronto.");
+				form.reset();
+			})
+			.catch((error) => alert("Error al enviar: " + error));
+		});
+	}
+</script>
