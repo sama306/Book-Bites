@@ -52,12 +52,13 @@ const totalGenres = new Set(allBooks.map(book => book.data.genres).filter(Boolea
 				<h3>Solicite una propuesta</h3>
 				<div class="contact-info">
 					<p><strong>Tel:</strong> +54 11 1234-5678</p>
-					<p><strong>Email:</strong> valensamacoits1@gmail.com</p>
+					<p><strong>Email:</strong> contacto@gmail.com</p>
 				</div>
 				<img src="/lucrative.webp" alt="Lucrative Proposal" class="contact-image" />
 			</div>
 
-			<form class="contact-form">
+			<form class="contact-form" name="contacto" method="POST" data-netlify="true">
+				<input type="hidden" name="form-name" value="contacto" />
 				<div class="form-group">
 					<label for="name">Nombre</label>
 					<input type="text" id="name" name="name" placeholder="Ej: Juan Pérez" required />
