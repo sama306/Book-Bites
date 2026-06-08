@@ -8,7 +8,7 @@ interface Props {
 const {book} = Astro.props
 ---
 
-<div class="book-card">
+<div class="book-card" data-genres={JSON.stringify(book.data.genres)}>
     <img 
         src={book.data.cover ? (book.data.cover.startsWith('/') ? book.data.cover : `/${book.data.cover}`) : '/placeholder-book.webp'} 
         alt={book.data.title} 
