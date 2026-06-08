@@ -1,27 +1,176 @@
 ---
-import { render } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import BaseLayouts from '../../layouts/baseLayouts.astro';
-import { getCollection } from 'astro:content';
-import Likes from '../../components/Likes';
 
-export async function getStaticPaths(){
-    const books = await getCollection('books')
-
-    return books.map((book) => {
-        return {
-            params: { id: book.id },
-            props: { book }
-        }
-    })
+export async function getStaticPaths() {
+    const books = await getCollection('books');
+    return books.map(book => ({
+        params: { id: book.id },
+        props: { book },
+    }));
 }
 
-const { book } = Astro.props
-const { Content } = await render(book)
+const { book } = Astro.props;
+const { Content } = await render(book);
+
+const coverSrc = book.data.cover
+    ? (book.data.cover.startsWith('/') ? book.data.cover : `/${book.data.cover}`)
+    : '/placeholder-book.webp';
 ---
 
 <BaseLayouts>
-    <div class="content">
-        <Content />
-        <Likes client:visible />
+    <div class="content book-page">
+        <header class="book-hero">
+            <div class="cover-wrapper">
+                <img src={coverSrc} alt={book.data.title} class="main-cover" />
+            </div>
+            <div class="book-meta">
+                <span class="rating-pill">{book.data.rating}/10 Rating</span>
+                <h1>{book.data.title}</h1>
+                <p class="author-display">Escrito por <strong>{book.data.author}</strong></p>
+                <div class="genre-tags">
+                    {book.data.genres.map(genre => <span class="tag">{genre}</span>)}
+                </div>
+            </div>
+        </header>
+
+        <div class="review-container">
+            <article class="prose">
+                <Content />
+            </article>
+
+            <aside class="actions">
+                <div class="Likes">
+                    <span>¿Te gustó esta reseña?</span>
+                    <button id="like-button">❤️ Me gusta</button>
+                </div>
+                <a href="/books" class="back-link">← Volver a la biblioteca</a>
+            </aside>
+        </div>
     </div>
 </BaseLayouts>
+
+<style>
+    #like-button {
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        user-select: none;
+    }
+
+    #like-button.is-liked {
+        background-color: #ff4b6e !important;
+        transform: scale(1.1);
+        box-shadow: 0 4px 15px rgba(255, 75, 110, 0.3);
+    }
+
+    #like-button:active {
+        transform: scale(0.95);
+    }
+
+    .book-hero {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        margin-bottom: 60px;
+        padding: 40px;
+        background: #ffffff;
+        border-radius: 24px;
+        box-shadow: 0 10px 40px rgba(122, 73, 197, 0.08);
+        border: 1px solid #f1edfa;
+    }
+
+    .main-cover {
+        width: 240px;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 15px 15px 0 #ebe5f2;
+        transform: rotate(-2deg);
+        transition: transform 0.3s ease;
+    }
+
+    .main-cover:hover {
+        transform: rotate(0deg);
+    }
+
+    .book-meta h1 {
+        font-size: 2.8rem;
+        margin: 10px 0;
+        color: #333;
+        line-height: 1.1;
+    }
+
+    .author-display {
+        font-size: 1.2rem;
+        color: #666;
+        margin-bottom: 25px;
+    }
+
+    .rating-pill {
+        background: #7a49c5;
+        color: white;
+        padding: 6px 16px;
+        border-radius: 50px;
+        font-weight: bold;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .tag {
+        background: #f1edfa;
+        color: #7a49c5;
+        padding: 6px 14px;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    .review-container {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        gap: 60px;
+        align-items: start;
+    }
+
+    .prose {
+        line-height: 1.8;
+        font-size: 1.05rem;
+        color: #444;
+    }
+
+    .actions {
+        position: sticky;
+        top: 140px;
+    }
+
+    .back-link {
+        display: block;
+        margin-top: 30px;
+        color: #7a49c5;
+        text-decoration: none;
+        font-weight: 600;
+        transition: transform 0.2s;
+    }
+
+    .back-link:hover {
+        transform: translateX(-5px);
+    }
+
+    @media (max-width: 900px) {
+        .book-hero { flex-direction: column; text-align: center; padding: 30px; }
+        .review-container { grid-template-columns: 1fr; }
+        .main-cover { width: 180px; transform: none; }
+        .book-meta h1 { font-size: 2.2rem; }
+        .actions { position: static; margin-top: 40px; }
+    }
+</style>
+
+<script>
+    const likeButton = document.getElementById('like-button');
+
+    if (likeButton) {
+        likeButton.addEventListener('click', () => {
+            const isLiked = likeButton.classList.toggle('is-liked');
+            likeButton.textContent = isLiked ? '❤️ ¡Te gusta!' : '❤️ Me gusta';
+        });
+    }
+</script>
