@@ -9,23 +9,21 @@ const {book} = Astro.props
 ---
 
 <div class="book-card">
-    <img src={book.data.cover ? (book.data.cover.startsWith('/') ? book.data.cover : `/${book.data.cover}`) : ''} alt={book.data.title} class="book-cover" />
+    <img 
+        src={book.data.cover ? (book.data.cover.startsWith('/') ? book.data.cover : `/${book.data.cover}`) : '/placeholder-book.webp'} 
+        alt={book.data.title} 
+        class="book-cover" 
+    />
     <div class="card-content">
-        <p class="book-title">{book.data.title}, {book.data.rating}/10</p>
+        <h3 class="book-title">{book.data.title}</h3>
         <p class="author-name">Por {book.data.author}</p>
+        <p class="rating">Rating: {book.data.rating}/10</p>
         <p class="book-summary">{book.data.summary}</p>
-        <a href={`/books/${book.id}`}>Read Review</a>
+        <a href={`/books/${book.id}`} class="full-review">Read Review</a>
     </div>
 </div>
 
 <style>
-	h2 {
-		padding-right: 10px;
-		border-right: 8px solid #ebe5f2;
-		border-bottom: 8px solid #f9f6fc;
-		margin-bottom: 40px;
-		text-align: right;
-	}
 	.book-card {
 		background-color: #f9f6fc;
 		padding: 16px 20px;
@@ -35,6 +33,8 @@ const {book} = Astro.props
 		gap: 20px;
 		align-items: flex-start;
 		box-shadow: 8px 8px 0 #ebe5f2;
+        border: 1px solid #e0d5f0;
+        border-radius: 8px;
 	}
 	.book-cover {
 		width: 80px;
@@ -45,16 +45,31 @@ const {book} = Astro.props
 	}
 	.card-content { flex: 1; }
 	.book-title	{
-		font-size: 1.4em;
+		font-size: 1.5rem;
 		font-weight: bold;
 		margin: 0;
 	}
+    .rating {
+        font-weight: 500;
+        color: #7a49c5;
+        margin: 5px 0 10px 0;
+    }
 	.book-summary {
-		font-size: 1em;
+		font-size: 0.95em;
+        margin-bottom: 15px;
 	}
-	.no-book {
-		text-align: center;
-		font-weight: bold;
-		padding: 10px;
-	}
+    .full-review {
+        display: inline-block;
+        background-color: transparent;
+        color: #7a49c5;
+        border: 1px solid #7a49c5;
+        padding: 6px 12px;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: all 0.2s;
+    }
+    .full-review:hover {
+        background-color: #7a49c5;
+        color: #fff;
+    }
 </style>

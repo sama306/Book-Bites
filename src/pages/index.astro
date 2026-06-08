@@ -1,6 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import BaseLayouts from "../layouts/baseLayouts.astro"
+import BookCard from "../components/BookCard.astro";
 
 const allBooks = await getCollection('books');
 const latestBooks = allBooks.slice(-2).reverse();
@@ -22,16 +23,7 @@ const totalGenres = new Set(allBooks.map(book => book.data.genres).filter(Boolea
 
 			<div class="latest-reviews">
 				{latestBooks.map(book => (
-					<article class="review-card">
-						<img src={book.data.cover ? (book.data.cover.startsWith('/') ? book.data.cover : `/${book.data.cover}`) : ''} alt={book.data.title} class="book-cover" />
-						<div class="review-info">
-							<h3>{book.data.title}</h3>
-							<p class="author-name">Por {book.data.author}</p>
-							<p class="rating">Rating: {book.data.rating}/10</p>
-							<p class="summary">{book.data.summary}</p>
-							<a href={`/books/${book.id}`} class="full-review">Full review</a>
-						</div>
-					</article>
+					<BookCard book={book} />
 				))}
 			</div>
 
@@ -122,36 +114,6 @@ const totalGenres = new Set(allBooks.map(book => book.data.genres).filter(Boolea
 		margin: 40px 0;
 		text-align: left;
 	}
-	.review-card {
-		background-color: #f9f6fc;
-		padding: 20px;
-		border-radius: 8px;
-		border: 1px solid #e0d5f0;
-		display: flex; /* Cambiado a flex horizontal */
-		gap: 20px;
-		align-items: flex-start;
-	}
-	.book-cover {
-		width: 120px;
-		height: 180px;
-		object-fit: cover;
-		border-radius: 4px;
-		flex-shrink: 0;
-		box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-	}
-	.review-info { flex: 1; }
-	.review-card h3 {
-		margin: 0 0 5px 0;
-	}
-	.rating {
-		font-weight: 500;
-		color: #7a49c5;
-		margin-bottom: 10px;
-	}
-	.summary {
-		font-size: 0.9em !important;
-		flex-grow: 1;
-	}
 	a {
 		display: inline-block;
 		background-color: #7a49c5;
@@ -198,7 +160,7 @@ const totalGenres = new Set(allBooks.map(book => book.data.genres).filter(Boolea
 		background-color: #f9f6fc;
 		padding: 80px 20px;
 		text-align: center;
-		margin-top: -1px; /* Elimina la línea de división por error de sub-píxel */
+		margin-top: -1px;
 		position: relative;
 		z-index: 1;
 	}
