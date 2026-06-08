@@ -16,6 +16,7 @@ const allBooks = await getCollection('books');
 					<article class="review-card">
 						<div class="book-icon">📖</div>
 						<h3>{book.data.title}</h3>
+						<p class="author-name">Por {book.data.author}</p>
 						<p class="rating">Rating: {book.data.rating}/10</p>
 						<p class="summary">{book.data.summary}</p>
 						<a href={`/books/${book.id}`} class="full-review">Full review</a>

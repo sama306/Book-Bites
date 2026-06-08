@@ -10,7 +10,7 @@ const {book} = Astro.props
 
 <div class="book-card">
     <p class="book-title">{book.data.title}, {book.data.rating}/10</p>
-    <p class="book-author">{book.data.author}</p>
+    <p class="author-name">Por {book.data.author}</p>
 	<p class="book-summary">{book.data.summary}</p>
 	<a href={`/books/${book.id}`}>Read Review</a>
 </div>
@@ -33,9 +33,6 @@ const {book} = Astro.props
 		font-size: 1.4em;
 		font-weight: bold;
 		margin: 0;
-	}
-	.book-author {
-		margin-top: 0;
 	}
 	.book-summary {
 		font-size: 1em;
