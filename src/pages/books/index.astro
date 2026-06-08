@@ -9,9 +9,20 @@ const books = await getCollection('books')
 <BaseLayouts>
 	<div class="content">
 		<h2>Books</h2>
-		{books.map((book) => <BookCard book={book} />)}
+		<div class="books-grid">
+			{books.map((book) => <BookCard book={book} />)}
+		</div>
 		{books.length < 1 && (
 			<p class="no-book">No books to show.</p>
 		)}
 	</div>
 </BaseLayouts>
+
+<style>
+	.books-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+		gap: 30px;
+		margin-top: 40px;
+	}
+</style>

@@ -3,6 +3,7 @@ title: "The Blade Itself"
 author: "Joe Abercrombie"
 summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, reprehenderit."
 rating: 8
+cover: "TheBladeItself.webp"
 genres: ["Dark Fantasy"]
 ---
 

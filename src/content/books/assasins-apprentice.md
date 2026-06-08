@@ -3,6 +3,7 @@ title: "Assassin's Apprentice"
 author: "Robin Hobb"
 summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, reprehenderit."
 rating: 8
+cover: "AssassinsApprentice.webp"
 genres: ["Epic Fantasy"]
 ---
 

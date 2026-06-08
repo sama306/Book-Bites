@@ -9,7 +9,8 @@ const books = defineCollection({
         author: z.string(),
         rating: z.number(),
         summary: z.string(),
-        genres: z.string().array()
+        genres: z.string().array(),
+        cover: z.string().optional(),
     })
 })
 

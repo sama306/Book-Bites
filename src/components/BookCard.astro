@@ -9,10 +9,13 @@ const {book} = Astro.props
 ---
 
 <div class="book-card">
-    <p class="book-title">{book.data.title}, {book.data.rating}/10</p>
-    <p class="author-name">Por {book.data.author}</p>
-	<p class="book-summary">{book.data.summary}</p>
-	<a href={`/books/${book.id}`}>Read Review</a>
+    <img src={book.data.cover ? (book.data.cover.startsWith('/') ? book.data.cover : `/${book.data.cover}`) : ''} alt={book.data.title} class="book-cover" />
+    <div class="card-content">
+        <p class="book-title">{book.data.title}, {book.data.rating}/10</p>
+        <p class="author-name">Por {book.data.author}</p>
+        <p class="book-summary">{book.data.summary}</p>
+        <a href={`/books/${book.id}`}>Read Review</a>
+    </div>
 </div>
 
 <style>
@@ -26,9 +29,21 @@ const {book} = Astro.props
 	.book-card {
 		background-color: #f9f6fc;
 		padding: 16px 20px;
-		margin: 20px auto;
+		margin: 0;
+		height: 100%;
+		display: flex;
+		gap: 20px;
+		align-items: flex-start;
 		box-shadow: 8px 8px 0 #ebe5f2;
 	}
+	.book-cover {
+		width: 80px;
+		height: 120px;
+		object-fit: cover;
+		border-radius: 2px;
+		flex-shrink: 0;
+	}
+	.card-content { flex: 1; }
 	.book-title	{
 		font-size: 1.4em;
 		font-weight: bold;

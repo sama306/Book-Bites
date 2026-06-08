@@ -14,12 +14,14 @@ const allBooks = await getCollection('books');
 			<div class="reviews-grid">
 				{allBooks.map(book => (
 					<article class="review-card">
-						<div class="book-icon">📖</div>
-						<h3>{book.data.title}</h3>
-						<p class="author-name">Por {book.data.author}</p>
-						<p class="rating">Rating: {book.data.rating}/10</p>
-						<p class="summary">{book.data.summary}</p>
-						<a href={`/books/${book.id}`} class="full-review">Full review</a>
+						<img src={book.data.cover ? (book.data.cover.startsWith('/') ? book.data.cover : `/${book.data.cover}`) : ''} alt={book.data.title} class="book-cover" />
+						<div class="review-info">
+							<h3>{book.data.title}</h3>
+							<p class="author-name">Por {book.data.author}</p>
+							<p class="rating">Rating: {book.data.rating}/10</p>
+							<p class="summary">{book.data.summary}</p>
+							<a href={`/books/${book.id}`} class="full-review">Full review</a>
+						</div>
 					</article>
 				))}
 			</div>
@@ -54,8 +56,8 @@ const allBooks = await getCollection('books');
 	}
 	.reviews-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-		gap: 20px;
+		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+		gap: 30px;
 		margin: 40px 0;
 		text-align: left;
 	}
@@ -65,12 +67,18 @@ const allBooks = await getCollection('books');
 		border-radius: 8px;
 		border: 1px solid #e0d5f0;
 		display: flex;
-		flex-direction: column;
+		gap: 20px;
+		align-items: flex-start;
 	}
-	.book-icon {
-		font-size: 2.5rem;
-		margin-bottom: 10px;
+	.book-cover {
+		width: 100px;
+		height: 150px;
+		object-fit: cover;
+		border-radius: 4px;
+		flex-shrink: 0;
+		box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 	}
+	.review-info { flex: 1; }
 	.rating {
 		font-weight: 500;
 		color: #7a49c5;
