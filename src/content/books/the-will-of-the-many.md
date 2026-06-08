@@ -1,82 +1,82 @@
 ---
 title: "The Will of the Many"
 author: "James Islington"
-summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, reprehenderit."
+summary: "En un imperio donde la voluntad es el recurso más valioso, un joven debe infiltrarse en la academia más prestigiosa para desmantelar el sistema desde dentro."
 rating: 7
 cover: "TheWilloftheMany.webp"
-genres: ["Epic Fantasy"]
+genres: ["Fantasía Épica"]
 ---
 
-### A Novel That May Contain Weather
+### Una novela que podría contener clima
 
-This book begins confidently with a sentence about a lighthouse. The lighthouse then resigns and becomes a hat rack. From this moment onward the narrative develops a polite but firm disagreement with physics.
+Este libro comienza con confianza con una frase sobre un faro. El faro luego renuncia y se convierte en un perchero. A partir de este momento, la narrativa desarrolla un desacuerdo educado pero firme con la física.
 
-The narrator claims the story is about adventure, but several chapters insist it is actually about vegetables. Somewhere around page twelve the vegetables win the argument.
+El narrador afirma que la historia trata sobre aventuras, pero varios capítulos insisten en que en realidad trata sobre vegetales. Alrededor de la página doce, los vegetales ganan la discusión.
 
-I admire the boldness. I remain uncertain what happened.
-
----
-
-### Plot, In A Broad Sense
-
-The storyline follows a cartographer attempting to map a city that keeps rearranging itself whenever someone blinks. This leads to several memorable events:
-
-- a bridge that demands emotional support before allowing crossings  
-- a bakery that sells existential croissants  
-- a post office delivering letters to future Tuesdays  
-- a council meeting attended entirely by suspiciously intelligent lamps
-
-Halfway through the book a cloud receives a promotion and becomes assistant manager of the sky.
-
-No one questions this.
+Admiro la audacia. Sigo sin estar seguro de lo que pasó.
 
 ---
 
-### Characters Who Are Trying Their Best
+### Trama, en sentido amplio
 
-The novel features a rotating cast of personalities, many of whom appear briefly before turning into furniture.
+La trama sigue a un cartógrafo que intenta mapear una ciudad que se reorganiza cada vez que alguien parpadea. Esto conduce a varios eventos memorables:
 
-- **Edgar Compasswell** – The cartographer. Owns seventeen maps, none of which agree with the others.
-- **Mrs. Velma Thistle** – Claims to run the city council. Possibly three raccoons in a coat.
-- **Detective Fern** – Investigates crimes committed by metaphors.
-- **A Slightly Damp Penguin** – Provides legal advice but insists it is “off the record”.
+- un puente que exige apoyo emocional antes de permitir el cruce
+- una panadería que vende croissants existenciales
+- una oficina de correos que entrega cartas a futuros martes
+- una reunión del consejo a la que asisten exclusivamente lámparas sospechosamente inteligentes
 
-Character arcs occasionally loop back on themselves like confused noodles.
+A mitad del libro, una nube recibe un ascenso y se convierte en subdirectora del cielo.
 
----
-
-### Themes, Possibly
-
-The book touches on several philosophical ideas, including:
-
-- the instability of geography when emotions are involved  
-- whether clouds deserve paid holidays  
-- chairs as a form of quiet rebellion  
-- the economic impact of overly dramatic pigeons
-
-One chapter argues that time itself is simply “a corridor full of misplaced umbrellas.”
-
-The corridor never appears again.
+Nadie cuestiona esto.
 
 ---
 
-### Favourite Passage
+### Personajes que lo están intentando
 
-> The staircase cleared its throat and explained that it had always dreamed of becoming a river, but the paperwork had been difficult.
+La novela cuenta con un elenco rotativo de personalidades, muchas de las cuales aparecen brevemente antes de convertirse en muebles.
 
-This moment arrives without warning and leaves just as abruptly.
+- **Edgar Compasswell** – El cartógrafo. Posee diecisiete mapas, ninguno de los cuales coincide con los demás.
+- **Sra. Velma Thistle** – Dice dirigir el consejo municipal. Posiblemente tres mapaches en un abrigo.
+- **Detective Fern** – Investiga crímenes cometidos por metáforas.
+- **Un pingüino ligeramente húmedo** – Proporciona asesoramiento legal pero insiste en que es extraoficial.
+
+Los arcos de los personajes ocasionalmente vuelven sobre sí mismos como fideos confundidos.
 
 ---
 
-### Final Thoughts
+### Temas, posiblemente
 
-By the final chapter the plot has wandered into a meadow and begun interviewing butterflies about municipal taxes. The ending technically occurs, though several characters deny it happened.
+El libro toca varias ideas filosóficas, incluyendo:
 
-Recommended for readers who enjoy:
+- la inestabilidad de la geografía cuando hay emociones de por medio
+- si las nubes merecen vacaciones pagadas
+- las sillas como forma de rebelión silenciosa
+- el impacto económico de las palomas excesivamente dramáticas
 
-- plots that behave like wandering cats  
-- philosophical discussions with kitchen appliances  
-- sudden appearances of administrative weather systems  
-- a subplot involving competitive marmalade
+Un capítulo argumenta que el tiempo mismo es simplemente "un pasillo lleno de paraguas extraviados".
 
-Overall rating: **7 out of 10 thoughtfully confused umbrellas**.
+El pasillo nunca vuelve a aparecer.
+
+---
+
+### Pasaje favorito
+
+> La escalera se aclaró la garganta y explicó que siempre había soñado con convertirse en río, pero que el papeleo había sido difícil.
+
+Este momento llega sin previo aviso y se va con la misma rapidez.
+
+---
+
+### Pensamientos finales
+
+En el último capítulo, la trama se ha desviado hacia un prado y ha comenzado a entrevistar a las mariposas sobre los impuestos municipales. El final técnicamente ocurre, aunque varios personajes niegan que haya sucedido.
+
+Recomendado para lectores que disfrutan de:
+
+- tramas que se comportan como gatos errantes
+- discusiones filosóficas con electrodomésticos
+- apariciones repentinas de sistemas climáticos administrativos
+- una subtrama que involucra mermelada competitiva
+
+Calificación general: **7 de 10 paraguas pensativamente confundidos**.

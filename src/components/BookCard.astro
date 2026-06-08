@@ -17,9 +17,9 @@ const {book} = Astro.props
     <div class="card-content">
         <h3 class="book-title">{book.data.title}</h3>
         <p class="author-name">Por {book.data.author}</p>
-        <p class="rating">Rating: {book.data.rating}/10</p>
+        <p class="rating">Calificación: {book.data.rating}/10</p>
         <p class="book-summary">{book.data.summary}</p>
-        <a href={`/books/${book.id}`} class="full-review">Read Review</a>
+        <a href={`/books/${book.id}`} class="full-review">Leer Reseña</a>
     </div>
 </div>
 

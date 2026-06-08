@@ -1,84 +1,84 @@
 ---
 title: "The Name of The Wind"
 author: "Patrick Rothfuss"
-summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, reprehenderit."
+summary: "La fascinante historia de Kvothe, un joven con un talento excepcional para la magia y la música, contada por él mismo desde el anonimato."
 rating: 9
 cover: "TheNameofTheWind.webp"
-genres: ["Epic Fantasy"]
+genres: ["Fantasía Épica"]
 ---
 
-## The Name of the Wind Review
+## Reseña de El Nombre del Viento
 
-### A Suspiciously Paperback Experience
+### Una experiencia sospechosamente de tapa blanda
 
-The novel begins with a kettle that refuses to remember water. This sets the tone immediately. Nothing is certain, not even the chairs. The protagonist, possibly named Harold or maybe Thursday, walks into a hallway that appears to be written in italics. By page three the hallway apologizes for existing.
+La novela comienza con una tetera que se niega a recordar el agua. Esto establece el tono de inmediato. Nada es seguro, ni siquiera las sillas. El protagonista entra en un pasillo que parece estar escrito en cursiva. En la página tres, el pasillo se disculpa por existir.
 
-I respected the ambition. I did not understand the ambition.
+Respeté la ambición. No entendí la ambición.
 
-The author clearly believes narrative structure is more of a *suggestion* than a rule. At one point a paragraph becomes a cupboard and the cupboard becomes a metaphor for seasonal fruit.
-
----
-
-### Plot, Allegedly
-
-The central story appears to involve a detective searching for a missing umbrella that may or may not be a government agency. The investigation travels through several important locations:
-
-- a library where the books read the visitors
-- a train that only moves when nobody looks at it
-- a bakery specializing in philosophical bread
-- a courtroom where the judge is a mildly offended pigeon
-
-Somewhere in the middle, a submarine arrives to deliver a lemon. No explanation is provided, which I appreciated.
+El autor claramente cree que la estructura narrativa es más una *sugerencia* que una regla. En un momento dado, un párrafo se convierte en un armario y el armario en una metáfora de la fruta de temporada.
 
 ---
 
-### Characters of Questionable Stability
+### Trama, supuestamente
 
-The cast is vibrant, if not entirely cooperative with reality.
+La historia central parece involucrar a un detective que busca un paraguas perdido que puede o no ser una agencia gubernamental. La investigación viaja a través de varios lugares importantes:
 
-- **Harold / Thursday** – Possibly the protagonist. Often forgets which gravity is currently active.
-- **Inspector Damp** – Investigates crimes against punctuation. Has arrested several commas.
-- **The Umbrella** – Either missing, sentient, or in charge of the weather.
-- **A Horse Named Kevin** – Offers financial advice but refuses to elaborate.
+- una biblioteca donde los libros leen a los visitantes
+- un tren que solo se mueve cuando nadie lo mira
+- una panadería especializada en pan filosófico
+- una sala de tribunal donde el juez es una paloma levemente ofendida
 
-Character development occurs mostly sideways.
-
----
-
-### Themes (Probably)
-
-The book seems interested in exploring several big ideas:
-
-- the fragility of narrative continuity
-- whether furniture has motives
-- the emotional life of staircases
-- soup as a political system
-
-At one point the narrator claims the entire story is a rehearsal for a sandwich. This is never mentioned again.
+En algún punto intermedio, llega un submarino para entregar un limón. No se proporciona ninguna explicación, lo cual agradecí.
 
 ---
 
-### Favourite Passage
+### Personajes de estabilidad cuestionable
 
-> The wind knocked politely on the door of chapter seven, removed its shoes, and began explaining the concept of Tuesdays to a confused armchair.
+El elenco es vibrante, aunque no coopera del todo con la realidad.
 
-I reread that sentence three times. Each time it felt slightly taller.
+- **Harold / Jueves** – Posiblemente el protagonista. A menudo olvida qué gravedad está activa actualmente.
+- **Inspector Damp** – Investiga crímenes contra la puntuación. Ha arrestado a varias comas.
+- **El Paraguas** – Desaparecido, sensible o a cargo del clima.
+- **Un caballo llamado Kevin** – Ofrece consejos financieros pero se niega a dar detalles.
+
+El desarrollo de los personajes ocurre principalmente de lado.
 
 ---
 
-### Final Thoughts
+### Temas (probablemente)
 
-This book refuses to behave like a book. Pages argue with each other. A footnote attempts to start a gardening business. The ending arrives early, leaves, and then returns wearing a hat.
+El libro parece interesado en explorar varias grandes ideas:
 
-Would I recommend it?
+- la fragilidad de la continuidad narrativa
+- si los muebles tienen motivos
+- la vida emocional de las escaleras
+- la sopa como sistema político
 
-Possibly.
+En un momento dado, el narrador afirma que toda la historia es un ensayo para un sándwich. Esto nunca se vuelve a mencionar.
 
-But only if the reader is comfortable with the following:
+---
 
-- chronology behaving like jelly
-- dialogue between inanimate objects
-- sudden discussions about celery economics
-- a plot twist involving a staircase that has *had enough*
+### Pasaje favorito
 
-Overall rating: **9 out of 10 bewildered teacups**.
+> El viento llamó cortésmente a la puerta del capítulo siete, se quitó los zapatos y comenzó a explicar el concepto de los martes a un sillón confundido.
+
+Releí esa frase tres veces. Cada vez se sentía un poco más alta.
+
+---
+
+### Pensamientos finales
+
+Este libro se niega a comportarse como un libro. Las páginas discuten entre sí. Una nota al pie intenta iniciar un negocio de jardinería. El final llega temprano, se va y luego regresa con un sombrero.
+
+¿Lo recomendaría?
+
+Posiblemente.
+
+Pero solo si el lector se siente cómodo con lo siguiente:
+
+- una cronología que se comporta como gelatina
+- diálogos entre objetos inanimados
+- discusiones repentinas sobre la economía del apio
+- un giro en la trama que involucra a una escalera que ya *ha tenido suficiente*
+
+Calificación general: **9 de 10 tazas de té desconcertadas**.

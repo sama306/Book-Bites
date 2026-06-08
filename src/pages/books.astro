@@ -9,8 +9,8 @@ const allBooks = await getCollection('books');
 <BaseLayouts>
 	<section class="hero">
 		<div class="content">
-			<h2>All My Reviews</h2>
-			<p>Explore the full collection of books I've dived into. From fantasy to science fiction, here is my honest take on every journey.</p>
+			<h2>Todas mis reseñas</h2>
+			<p>Explora la colección completa de libros en los que me he sumergido. De la fantasía a la ciencia ficción, aquí tienes mi visión honesta de cada viaje literario.</p>
 
 			<div class="reviews-grid">
 				{allBooks.map(book => (
@@ -18,7 +18,7 @@ const allBooks = await getCollection('books');
 				))}
 			</div>
 
-			<a href="/" class="back-home">Back to Home</a>
+			<a href="/" class="back-home">Volver al Inicio</a>
 		</div>
 	</section>
 </BaseLayouts>

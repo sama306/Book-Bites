@@ -10,7 +10,7 @@ const latestBooks = allBooks.slice(-2).reverse();
 const genres = ["Dark Fantasy", "Epic Fantasy"];
 
 
-const totalBooks = allBooks.length;
+const totalLibros = allBooks.length;
 const totalAuthors = new Set(allBooks.map(book => book.data.author)).size;
 const totalGenres = new Set(allBooks.map(book => book.data.genres).filter(Boolean).flat()).size;
 ---
@@ -18,8 +18,8 @@ const totalGenres = new Set(allBooks.map(book => book.data.genres).filter(Boolea
 <BaseLayouts>
 	<section class="hero">
 		<div class="content">
-			<h2>Welcome</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At temporibus consequuntur numquam? Illum fugit consectetur dolor dolore dicta? Optio iure placeat odio reprehenderit, delectus labore iusto molestias consequuntur voluptatem dolore.</p>
+			<h2>Bienvenido</h2>
+			<p>Explora un rincón literario donde cada reseña es un viaje. Desde reinos de fantasía épica hasta las fronteras de la ciencia ficción, comparto mi visión honesta sobre los libros que marcan la diferencia.</p>
 
 			<div class="latest-reviews">
 				{latestBooks.map(book => (
@@ -29,20 +29,20 @@ const totalGenres = new Set(allBooks.map(book => book.data.genres).filter(Boolea
 
 			<div class="stats-container">
 				<div class="stat-item">
-					<span class="stat-value">{totalBooks}</span>
-					<span class="stat-label">Books</span>
+					<span class="stat-value">{totalLibros}</span>
+					<span class="stat-label">Libros</span>
 				</div>
 				<div class="stat-item">
 					<span class="stat-value">{totalAuthors}</span>
-					<span class="stat-label">Authors</span>
+					<span class="stat-label">Autores</span>
 				</div>
 				<div class="stat-item">
 					<span class="stat-value">{totalGenres}</span>
-					<span class="stat-label">Genres</span>
+					<span class="stat-label">Géneros</span>
 				</div>
 			</div>
 
-			<a href="/books">Take a look at my reviews</a>
+			<a href="/books">Echa un vistazo a mis reseñas</a>
 		</div>
 	</section>
 

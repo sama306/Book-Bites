@@ -1,78 +1,78 @@
 ---
 title: "Assassin's Apprentice"
 author: "Robin Hobb"
-summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, reprehenderit."
+summary: "Trasyl, un bastardo real, es entrenado secretamente en las artes del asesinato mientras navega por las peligrosas intrigas de la corte de los Seis Ducados."
 rating: 8
 cover: "AssassinsApprentice.webp"
-genres: ["Epic Fantasy"]
+genres: ["Fantasía Épica"]
 ---
 
-### A Book That May Have Escaped From Another Book
+### Un libro que podría haber escapado de otro libro
 
-The novel opens with a perfectly ordinary paragraph that immediately becomes suspicious. By the second sentence the paragraph admits it has been pretending to be literature for several years and would rather pursue a career in landscaping.
+La novela comienza con un párrafo perfectamente ordinario que inmediatamente se vuelve sospechoso. En la segunda frase, el párrafo admite que ha estado fingiendo ser literatura durante varios años y que prefiere seguir una carrera en el paisajismo.
 
-The narrator tries to intervene but becomes entangled in a lengthy discussion with a rug about maritime law. From this point forward the narrative adopts the confident energy of someone assembling furniture without instructions.
+El narrador intenta intervenir pero se enreda en una larga discusión con una alfombra sobre derecho marítimo. A partir de este momento, la narrativa adopta la energía confiada de alguien que monta muebles sin instrucciones.
 
-It is unclear who is in charge.
-
----
-
-### Plot, Allegedly Under Supervision
-
-The story loosely concerns an inventor attempting to build a machine that organizes dreams alphabetically. This ambitious plan encounters numerous complications:
-
-- a lighthouse that only illuminates philosophical dilemmas  
-- a committee of extremely opinionated pigeons  
-- a bakery that refuses to bake anything round  
-- an escalator that leads directly into mild confusion
-
-At one point the machine briefly sorts several dreams about soup before requesting a lunch break.
+No está claro quién está al mando.
 
 ---
 
-### Participants In The Situation
+### Trama, supuestamente bajo supervisión
 
-The characters behave with admirable commitment, despite having no clear idea what is happening.
+La historia trata vagamente sobre un inventor que intenta construir una máquina que organice los sueños alfabéticamente. Este ambicioso plan encuentra numerosas complicaciones:
 
-- **Professor Alden Brackett** – The inventor. Believes strongly that dreams should be filed between “Doughnuts” and “Doorbells”.
-- **Marta Quill** – A journalist documenting the machine, though her notebook occasionally edits itself.
-- **Mr. Plink** – Claims to represent the Department of Abstract Machinery.
-- **A Cat Wearing A Waistcoat** – Has several opinions about municipal zoning but refuses interviews.
+- un faro que solo ilumina dilemas filosóficos
+- un comité de palomas extremadamente obstinadas
+- una panadería que se niega a hornear nada redondo
+- una escalera mecánica que conduce directamente a una confusión leve
 
-Their development occurs mostly during moments when gravity is distracted.
-
----
-
-### Topics The Book Mentions Briefly
-
-The novel appears to gesture toward several large themes:
-
-- the administrative challenges of sorting imagination  
-- the emotional wellbeing of underappreciated staircases  
-- whether clouds should require permits  
-- the geopolitical implications of marmalade
-
-A marginal note insists the story is secretly about patience, but the margin later retracts the statement.
+En un momento dado, la máquina clasifica brevemente varios sueños sobre sopa antes de solicitar una pausa para el almuerzo.
 
 ---
 
-### Favourite Passage
+### Participantes en la situación
 
-> The hallway paused thoughtfully, folded its arms, and asked the ceiling if Tuesdays were legally binding.
+Los personajes se comportan con un compromiso admirable, a pesar de no tener una idea clara de lo que está sucediendo.
 
-This exchange lasts approximately two sentences and slightly alters the posture of the room.
+- **Profesor Alden Brackett** – El inventor. Cree firmemente que los sueños deben archivarse entre "Donas" y "Dinteles".
+- **Marta Quill** – Una periodista que documenta la máquina, aunque su libreta se edita sola ocasionalmente.
+- **Sr. Plink** – Afirma representar al Departamento de Maquinaria Abstracta.
+- **Un gato con chaleco** – Tiene varias opiniones sobre la zonificación municipal pero rechaza las entrevistas.
+
+Su desarrollo ocurre principalmente durante los momentos en que la gravedad está distraída.
 
 ---
 
-### Final Thoughts
+### Temas que el libro menciona brevemente
 
-The ending arrives in a polite envelope marked “possibly final.” Several characters dispute the conclusion while the dream machine quietly alphabetizes a thunderstorm.
+La novela parece señalar varios grandes temas:
 
-Readers may enjoy this book if they appreciate:
+- los desafíos administrativos de clasificar la imaginación
+- el bienestar emocional de las escaleras poco apreciadas
+- si las nubes deberían requerir permisos
+- las implicaciones geopolíticas de la mermelada
 
-- plotlines wandering like curious goats  
-- conversations with architectural features  
-- administrative paperwork for imaginary objects  
-- a subplot involving a deeply skeptical spoon
+Una nota al margen insiste en que la historia trata secretamente sobre la paciencia, pero el margen luego se retracta de la afirmación.
 
-Overall rating: **8 out of 10 mildly perplexed lanterns**.
+---
+
+### Pasaje favorito
+
+> El pasillo hizo una pausa reflexiva, se cruzó de brazos y le preguntó al techo si los martes eran legalmente vinculantes.
+
+Este intercambio dura aproximadamente dos frases y altera ligeramente la postura de la habitación.
+
+---
+
+### Pensamientos finales
+
+El final llega en un sobre cortés marcado como "posiblemente final". Varios personajes cuestionan la conclusión mientras la máquina de sueños alfabetiza silenciosamente una tormenta eléctrica.
+
+Los lectores pueden disfrutar de este libro si aprecian:
+
+- tramas que deambulan como cabras curiosas
+- conversaciones con elementos arquitectónicos
+- papeleo administrativo para objetos imaginarios
+- una subtrama que involucra a una cuchara profundamente escéptica
+
+Calificación general: **8 de 10 linternas levemente perplejas**.
