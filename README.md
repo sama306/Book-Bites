@@ -1,43 +1,28 @@
-# Astro Starter Kit: Minimal
+# 📚 Books Bites
 
-```sh
-pnpm create astro@latest -- --template minimal
-```
+Books Bites es una aplicación web desarrollada con Astro que permite explorar libros de forma rápida e intuitiva.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 Demo
 
-## 🚀 Project Structure
+https://booksbites.netlify.app/
 
-Inside of your Astro project, you'll see the following folders and files:
+## ✨ Características
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- Exploración de libros
+- Diseño responsive
+- Interfaz moderna
+- Optimización de rendimiento con Astro
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🛠️ Tecnologías
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- Astro
+- JavaScript
+- HTML5
+- CSS3
+- 
+## 👨‍💻 Autor
 
-Any static assets, like images, can be placed in the `public/` directory.
+Valentín Samacoits
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+LinkedIn: https://www.linkedin.com/in/dante-valent%C3%ADn-samacoits-2880b8261/
+GitHub: https://github.com/sama306
