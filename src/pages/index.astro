@@ -88,7 +88,8 @@ const totalGenres = new Set(allBooks.map(book => book.data.genres).filter(Boolea
 
 <style>
 	.hero {
-		background-image: url('/wallpaper1.webp');
+		background-color: #f9f6fc;
+		background-image: linear-gradient(to bottom, rgba(249, 246, 252, 0) 80%, #f9f6fc 100%), url('/wallpaper1.webp');
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -99,6 +100,7 @@ const totalGenres = new Set(allBooks.map(book => book.data.genres).filter(Boolea
 		position: relative;
 		padding: 40px 20px;
 		box-sizing: border-box;
+		margin: 0;
 	}
 	.content {
 		text-align: center;
@@ -187,7 +189,9 @@ const totalGenres = new Set(allBooks.map(book => book.data.genres).filter(Boolea
 		background-color: #f9f6fc;
 		padding: 80px 20px;
 		text-align: center;
-		border-top: 1px solid #e0d5f0;
+		margin-top: -1px; /* Elimina la línea de división por error de sub-píxel */
+		position: relative;
+		z-index: 1;
 	}
 	.contact-container {
 		max-width: 1000px;

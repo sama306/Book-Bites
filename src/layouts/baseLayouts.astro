@@ -24,6 +24,42 @@
         <main>
             <slot />
         </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-top">
+                    <h1>Book Bites</h1>
+                    <h3>Contacto:</h3>
+                    <ul>
+                        <li><p>contacto@bookbites.com</p></li>
+                        <li><p>+34 900 123 456</p></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    <p>2026 Book Bites. Todos los derechos reservados.</p>
+                    <nav class="footer-legal">
+                        <a href="/terms">Términos y condiciones</a>
+                        <a href="/privacy">Política de Privacidad</a>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            let lastScrollY = window.scrollY;
+            const header = document.querySelector('header');
+
+            window.addEventListener('scroll', () => {
+                const currentScrollY = window.scrollY;
+                
+                if (currentScrollY > lastScrollY && currentScrollY > 100) {                    
+                    header?.classList.add('header-hidden');
+                } else {
+                    header?.classList.remove('header-hidden');
+                }         
+                lastScrollY = currentScrollY;
+            });
+        </script>
 	</body>
 </html>
 
@@ -32,11 +68,20 @@
         margin: 0;
     }
     header {
-        background-color: #f9f6fc;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+        z-index: 1000;
+        background: linear-gradient(to bottom, #f9f6fc 0%, rgba(249, 246, 252, 0.8) 60%);
+        backdrop-filter: blur(20px);
         padding: 10px 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        will-change: transform;
 
         h1 {
             margin: 0;
@@ -52,6 +97,52 @@
         a {
             text-decoration: none;
             border-bottom: 1px;
+        }
+    }
+
+    .header-hidden {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    footer {
+        background-color: #f1edfa;
+        padding: 60px 20px 30px;
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-top {
+            margin-bottom: 40px;
+            h2 {
+                margin: 0 0 10px 0;
+                font-size: 1.5rem;
+            }
+            p {
+                margin: 0;
+                color: #666;
+            }
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding-top: 25px;
+            border-top: 1px solid rgba(0,0,0,0.05);
+            font-size: 0.9rem;
+            color: #888;
+
+            .footer-legal {
+                display: flex;
+                gap: 20px;
+                a { color: #888; text-decoration: none; }
+                a:hover { text-decoration: underline; }
+            }
         }
     }
 </style>
