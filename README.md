@@ -19,10 +19,10 @@ https://booksbites.netlify.app/
 - JavaScript
 - HTML5
 - CSS3
-- 
+ 
 ## 👨‍💻 Autor
 
 Valentín Samacoits
 
-LinkedIn: https://www.linkedin.com/in/dante-valent%C3%ADn-samacoits-2880b8261/
-GitHub: https://github.com/sama306
+- LinkedIn: https://www.linkedin.com/in/dante-valent%C3%ADn-samacoits-2880b8261/
+- GitHub: https://github.com/sama306
