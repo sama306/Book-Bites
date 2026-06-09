@@ -75,7 +75,6 @@ import { ClientRouter } from 'astro:transitions';
                     lastScrollY = currentScrollY;
                 });
 
-                // Lógica de animaciones al hacer scroll
                 const observerOptions = {
                     threshold: 0.1,
                     rootMargin: '0px 0px -50px 0px'
@@ -92,7 +91,6 @@ import { ClientRouter } from 'astro:transitions';
                 document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
             }
 
-            // Inicializar en la primera carga y en cada navegación de Astro
             document.addEventListener('astro:page-load', initLayout);
         </script>
 	</body>
